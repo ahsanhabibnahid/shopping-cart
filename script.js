@@ -56,6 +56,9 @@ function currentSum(){
 
     let sum = iphoneCurrentPriceNumber + casingCurrentPriceNumber
 
-    document.getElementById('totalSum').innerText = sum
-    document.getElementById('total').innerText = sum
+    let subTotal = document.getElementById('totalSum').innerText = sum
+    let tax = subTotal/10;
+    document.getElementById('tax').innerText = tax
+    let total = subTotal + tax;
+    document.getElementById('total').innerText = total
 }
