@@ -24,10 +24,7 @@ function minus(id,value,currentPrice){
     let totalInput = inputNumber - 1
     document.getElementById(id).value = totalInput;
 
-    let iphoneCurrentPrice = document.getElementById(currentPrice).innerText;
-    let iphoneCurrentPriceNum = parseInt(iphoneCurrentPrice)
-
-    let iphoneTotalPrice =  iphoneCurrentPriceNum - value;
+    let iphoneTotalPrice =  totalInput * value;
     document.getElementById(currentPrice).innerText = iphoneTotalPrice;
 
     currentSum()
